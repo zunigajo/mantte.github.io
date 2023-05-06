@@ -2,21 +2,17 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Descargar archivo actualizado mantto</title>
+    <title>Descarga de archivo desde GitHub</title>
     <!-- Agregar las referencias a los archivos de estilo y JavaScript de Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center">Subir archivo a GitHub</h1>
-      <form enctype="multipart/form-data" method="post" action="https://github.com/repos/:owner/:repo/releases/:release_id/assets?name=:filename&access_token=:token">
-        <div class="form-group">
-          <label for="file">Selecciona un archivo:</label>
-          <input type="file" id="file" name="file" class="form-control-file">
-        </div>
-        <button type="submit" class="btn btn-primary">Subir archivo</button>
-      </form>
+      <h1 class="text-center">Descarga de archivo desde GitHub</h1>
+      <p class="text-center">Haz clic en el siguiente enlace para descargar el archivo:</p>
+      <p class="text-center"><a href="https://raw.githubusercontent.com/:owner/:repo/:branch/:path/to/file">Descargar archivo</a></p>
     </div>
   </body>
 </html>
+
